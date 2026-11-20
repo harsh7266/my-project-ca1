@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Changing DOM Content</title>
+</head>
+
+<body>
+
+    <h2 id="message">Old Message</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        // Change the text of the heading
+        document.getElementById("message").textContent =
+            "Welcome to Interactive Web Development!";
+
+        // Insert HTML content inside the div
+        document.getElementById("result").innerHTML =
+            "<strong>Learning JavaScript</strong>";
+
+    </script>
+
+</body>
+</html>
+
+

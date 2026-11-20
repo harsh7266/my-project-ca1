@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+
+<body>
+
+    <h1 id="heading">Welcome</h1>
+
+    <p class="info">Learn JavaScript</p>
+
+    <p class="info">Practice JavaScript</p>
+
+    <script>
+
+        // 1. Select heading using ID
+        const title = document.getElementById("heading");
+
+        // 2. Select first paragraph using class
+        const firstInfo = document.querySelector(".info");
+
+        // 3. Select all paragraphs using class
+        const allInfo = document.querySelectorAll(".info");
+
+
+        // 4. Display original content in console
+        console.log("Original heading:", title.textContent);
+
+        console.log("Original paragraph:", firstInfo.textContent);
+
+        console.log("Total paragraphs:", allInfo.length);
+
+
+        // 5. Change HTML content
+        title.textContent = "Welcome to JavaScript DOM!";
+
+        firstInfo.textContent = "JavaScript is interesting!";
+
+        allInfo[1].textContent = "I am learning DOM manipulation!";
+
+    </script>
+
+</body>
+</html>
+
+

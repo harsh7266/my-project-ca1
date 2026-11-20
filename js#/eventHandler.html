@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Event Handling</h2>
+
+    <!-- Method 1: Inline event handler -->
+    <button onclick="alert('Inline Event')">
+        Button 1
+    </button>
+
+    <!-- Method 2: DOM property -->
+    <button id="btn2">
+        Button 2
+    </button>
+
+    <!-- Method 3: addEventListener -->
+    <button id="btn3">
+        Button 3
+    </button>
+
+    <script>
+
+        // Method 2: DOM property
+        const button2 = document.getElementById("btn2");
+
+        button2.onclick = function() {
+            alert("DOM Property Event");
+        };
+
+        // Method 3: addEventListener
+        const button3 = document.getElementById("btn3");
+
+        button3.addEventListener("click", function() {
+            alert("addEventListener Event");
+        });
+
+    </script>
+
+</body>
+</html>
+
+
